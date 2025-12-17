@@ -102,7 +102,7 @@ exports.getChats = async (req, res) => {
     const emailParam = req.params.email;
     const callerEmail = req.user?.email;
 
-    // ensure caller asks for their own history
+  
     if (!callerEmail || callerEmail !== decodeURIComponent(emailParam)) {
       return res.status(403).json({ success: false, message: "Forbidden" });
     }

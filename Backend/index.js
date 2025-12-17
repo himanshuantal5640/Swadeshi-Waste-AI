@@ -4,7 +4,7 @@ const cors = require("cors");
 const path = require("path");
 const connectDB = require("./config/db");
 const testRoute = require("./routes/testRoute");
-const authRoutes = require("./routes/authRoutes");
+// const authRoutes = require("./routes/authRoutes");
 const userRoutes = require("./routes/userRoutes");
 const chatRoutes = require("./routes/chatRoutes");
 const wasteValueRoutes = require("./routes/wasteValueRoutes");
@@ -30,7 +30,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 connectDB();
 
 app.use("/api/test", testRoute);
-app.use("/api/auth", authRoutes);
+// app.use("/api/auth", authRoutes);
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/waste-value", wasteValueRoutes);

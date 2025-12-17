@@ -65,7 +65,7 @@ export default function Home() {
           className={`text-lg max-w-2xl mx-auto
           ${theme === "dark" ? "text-green-200" : "text-gray-600"}`}
         >
-          Scan waste, learn how to dispose responsibly, chat with our AI eco-expert,
+          Transform Waste into Value, learn how to dispose responsibly, chat with our AI eco-expert,
           and explore tools for sustainable living.
         </motion.p>
       </section>

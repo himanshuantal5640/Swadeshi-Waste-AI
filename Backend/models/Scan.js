@@ -4,7 +4,7 @@ const ScanSchema = new mongoose.Schema({
   email: { type: String, required: true },
   wasteItem: String,
   analysis: Object,
-  image: String, // saved path
+  image: String,
   date: { type: Date, default: Date.now }
 });
 

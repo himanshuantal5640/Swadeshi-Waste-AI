@@ -88,7 +88,6 @@ ${item}
         notes: ""
       };
 
-    // Save to DB (email from token)
     const doc = await WasteValue.create({
       email,
       query: item,

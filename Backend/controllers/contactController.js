@@ -1,9 +1,9 @@
-// backend/controllers/contactController.js
+
 const SupportMessage = require("../models/SupportMessage");
 
 exports.sendContactMessage = async (req, res) => {
   try {
-    // req.user comes from firebaseAuth middleware
+  
     const firebaseUser = req.user;
 
     if (!firebaseUser || !firebaseUser.email) {

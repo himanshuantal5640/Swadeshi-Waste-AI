@@ -6,7 +6,7 @@ const supportMessageSchema = new mongoose.Schema(
     email: { type: String, required: true },
     phone: { type: String, default: "" },
     message: { type: String, required: true },
-    userUid: { type: String, default: null }, // Firebase UID
+    userUid: { type: String, default: null }, 
     metadata: { type: Object, default: {} },
   },
   { timestamps: true }

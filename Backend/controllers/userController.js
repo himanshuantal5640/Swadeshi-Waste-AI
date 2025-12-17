@@ -2,7 +2,6 @@ const User = require("../models/User");
 
 exports.createUser = async (req, res) => {
   try {
-    // email and name come from Firebase token / request body
     const email = req.user?.email;
     const name = req.body.name || req.user?.name || "User";
 

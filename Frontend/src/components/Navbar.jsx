@@ -40,7 +40,7 @@ export default function Navbar() {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/features">Features</Link></li>
           <li><Link to="/waste-to-value">WasteToValue</Link></li>
-          <li><Link to="/chat">EcoChat 🤖🌿</Link></li>
+          <li><Link to="/chat">EcoChat</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
