@@ -22,7 +22,7 @@ app.use(
     credentials: true,
   })
 );
-app.use(cors());
+// app.options("(.*)", cors());
 
 app.use(express.json({ limit: "20mb" }));
 

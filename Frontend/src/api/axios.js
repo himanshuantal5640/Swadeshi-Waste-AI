@@ -4,7 +4,7 @@ import { auth } from "../firebase";
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE,
-  withCredentials: false, // firebase token will be sent in headers
+  withCredentials: true, // firebase token will be sent in headers
 });
 
 // Attach Firebase Token Automatically
