@@ -4,6 +4,8 @@ import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
+const BACKEND_URL = import.meta.env.VITE_API_BASE.replace("/api", "");
+
 export default function History() {
   const [history, setHistory] = useState([]);
   const navigate = useNavigate();
@@ -40,12 +42,12 @@ export default function History() {
             navigate("/result", {
               state: {
                 analysis: h,
-                preview: `http://localhost:5000/${h.image}`
+                preview: `${BACKEND_URL}/${h.image}`
               }
             })
           }
         >
-          <img src={`http://localhost:5000/${h.image}`} className="w-48 rounded" />
+          <img src={`${BACKEND_URL}/${h.image}`} className="w-48 rounded" />
 
           <button
             onClick={(e) => {

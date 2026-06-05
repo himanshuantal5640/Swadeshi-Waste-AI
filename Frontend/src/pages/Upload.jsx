@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import { useTheme } from "../context/ThemeContext";
 import ImageUpload from "../components/ImageUpload";
@@ -7,6 +5,8 @@ import { auth } from "../firebase";
 import toast from "react-hot-toast";
 import api from "../api/axios";
 import { useNavigate } from "react-router-dom"; // ✅ ADDED
+
+const BACKEND_URL = import.meta.env.VITE_API_BASE.replace("/api", "");
 
 export default function Upload() {
   const { theme } = useTheme();
@@ -108,7 +108,7 @@ export default function Upload() {
 
             {/* ✅ SHOW BACKEND STORED IMAGE */}
             <img
-              src={`http://localhost:5000/${analysis.imagePath}`}
+              src={`${BACKEND_URL}/${analysis.imagePath}`}
               alt="uploaded"
               className="rounded-lg border max-h-80 object-cover border-green-900 shadow-lg mb-4"
             />
